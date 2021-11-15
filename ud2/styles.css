@@ -1,6 +1,7 @@
 h1 {
     color: #0ff;
     transition: all 300ms;
+    cursor: pointer;
 }
 
 h1:hover {
