@@ -6,6 +6,7 @@ h1 {
 
 h1:hover {
     box-shadow: 0 0 5px #0ff, 0 0 5px #0ff inset;
+    border-radius: 20px;
 }
 
 h2 {
