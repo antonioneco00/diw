@@ -5,7 +5,7 @@ h1 {
 }
 
 h1:hover {
-    box-shadow: 0 0 #0ff, 0 0 #0ff inset;
+    box-shadow: 0 0 5px #0ff, 0 0 5px #0ff inset;
 }
 
 h2 {
