@@ -4,7 +4,11 @@
 }
 
 .cajas {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-color: #00f;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
