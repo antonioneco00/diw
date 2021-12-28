@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url('../img/pattern.jpg');
+    background-size: contain;
+    text-align: center;
+}
+
+.clearfix {
+    clear: both;
+}
+
+h1, h2, h3 {
+    font-family: Fantasy, Verdana, Cursive;
+}
+
+li, p, footer {
+    font-family: sans-serif, system-ui, Cursive;
+}
+
+article {
+    padding: 20px 0;
+}
+
+#container {
+    width: 1000px;
+    background-color: #fff;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #000;
+}
+
+#header {
+    height: 150px;
+    background-color: #e2e25d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu {
+    background-color: #222;
+    border-bottom: 4px solid #9d9d49;
+}
+
+#menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#menu ul li:first-child {
+    border-left: 1px solid #9d9d49;
+}
+
+#menu ul li {
+    border-top: 1px solid #9d9d49;
+    border-right: 1px solid #9d9d49;
+    line-height: 50px;
+}
+
+#menu ul li a {
+    display: block;
+    color: #e2e25d;
+    padding: 0 50px;
+    text-decoration: none;
+    transition: all 300ms;
+}
+
+#menu ul li a:hover {
+    background-color: #e2e25d;
+    color: #000;
+}
+
+#welcome {
+    border-bottom: 1px dashed #9d9d49;
+}
+
+#welcome p {
+    padding: 20px 20px 20px 20px;
+}
+
+#song {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px dashed #9d9d49;
+}
+
+#song #last-song h2,
+#song #last-song p {
+    padding-bottom: 5px;
+}
+
+#song #description {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#song #description h3 {
+    padding-bottom: 10px;
+}
+
+#video h2 {
+    padding-bottom: 20px;
+}
+
+#footer {
+    height: 50px;
+    background-color: #222;
+    color: #e2e25d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 4px solid #9d9d49;
+}
