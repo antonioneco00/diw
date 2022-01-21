@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>fadeOut demo</title>
+    <style>
+      p {
+        font-size: 150%;
+        cursor: pointer;
+      }
+
+      button {
+          display: none;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body>
+    <p>If you click on this paragraph you'll see it just fade away.</p>
+    <button>El párrafo ha desaparecido. Púlsame para que vuelva a aparecer</button>
+    <script>
+      $("p").click(function () {
+        $("p").fadeOut("slow", function() {
+            $("button").show();
+        });
+      });
+
+      $("button").click(function() {
+          $("button").hide();
+          $("p").fadeIn(300);
+      });
+    </script>
+  </body>
+</html>
