@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi pagina web</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- jQuery -->
+        <script src="jQuery/jquery-3.6.0.min.js"></script>
+
+        <!-- Plugin bxSlider -->
+        <link rel="stylesheet" href="jQuery/bxslider/src/css/jquery.bxslider.css">
+        <script src="jQuery/bxslider/src/js/jquery.bxslider.js"></script>
+
+        <!-- Script -->
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <header id="header">
+                <h1><a href="#" title="Ir al inicio">Mi página web</a></h1>
+            </header>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Sobre mí</a></li>
+                </ul>
+
+                <div id="form-container">
+                    <form action="#">
+                        <input type="text" placeholder="Buscar..." title="Busca en la web">
+                        <input type="submit" value="&#x1f50d" title="Buscar">
+                    </form>
+                </div>
+            </nav>
+
+            <div id="slider">
+                <div class="bxslider">
+                    <div id="image1">
+                        <img src="img/image1.jpg" alt="Imagen 1" title="Imagen 1" width="900">
+                    </div>
+                    <div id="image2">
+                        <img src="img/image2.jpg" alt="Imagen 2" title="Imagen 2" width="900">
+                    </div>
+                    <div id="image3">
+                        <img src="img/image3.jpg" alt="Imagen 3" title="Imagen 3" width="900">
+                    </div>
+                </div>
+            </div>
+            
+            <section id="section">
+                <aside id="aside">
+                    <h3>Identificate</h3>
+
+                    <form action="#">
+                        <input type="text" placeholder="Usuario" title="Indique su nombre de usuario o correo electrónico">
+                        <input type="password" placeholder="Contraseña">
+
+                        <input type="submit" value="Entrar" title="Iniciar sesión">
+                    </form>
+
+                    <h3>Novedades</h3>
+
+                    <p>
+                        <span>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Asperiores voluptatem doloribus aspernatur reiciendis,
+                            placeat voluptates repudiandae pariatur vitae possimus esse sapiente nam sequi magni odit,
+                            accusamus, ab quae fugit eaque?
+                        </span>
+                    </p>
+                </aside>
+
+                <div id="articles">
+                    <article id="article1">
+                        <h2>Título del artículo</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Distinctio dolorum officia libero error temporibus molestiae fuga fugiat laudantium.
+                            Voluptatem rem nostrum aliquid magnam quasi culpa animi quos sed praesentium corrupti!
+
+                            <span>05/02/2022</span>
+                        </p>
+                    </article>
+
+                    <article id="article2">
+                        <h2>Título del artículo</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Distinctio dolorum officia libero error temporibus molestiae fuga fugiat laudantium.
+                            Voluptatem rem nostrum aliquid magnam quasi culpa animi quos sed praesentium corrupti!
+
+                            <span>05/02/2022</span>
+                        </p>
+                    </article>
+
+                    <article id="article3">
+                        <h2>Título del artículo</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Distinctio dolorum officia libero error temporibus molestiae fuga fugiat laudantium.
+                            Voluptatem rem nostrum aliquid magnam quasi culpa animi quos sed praesentium corrupti!
+
+                            <span>05/02/2022</span>
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <footer id="footer">
+                <p>Desarrollado por Antonio Nevado Contreras &copy; - 2022</p>
+            </footer>
+        </div>
+    </body>
+</html>

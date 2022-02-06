@@ -1,0 +1,276 @@
+/* IMPORTACIONES */
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../font/BebasNeue-Regular.eot') format('embedded-opentype'),
+         url('../font/BebasNeue-Regular.ttf') format('truetype'),
+         url('../font/BebasNeue-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../font/Quicksand_Book.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus-visible {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url('../img/pattern.jpg');
+}
+
+#container {
+    width: 1000px;
+    background-color: #ccc;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #333, 0 0 10px #333 inset;
+}
+
+#header {
+    height: 175px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'BebasNeue';
+    letter-spacing: 8px;
+    font-size: 26px;
+}
+
+#header h1 a {
+    color: #35aad9;
+    text-shadow: 4px 3px 0px rgb(18 124 186 / 75%);
+    transition: all 300ms;
+}
+
+#header h1 a:hover {
+    text-shadow: 0 0 12px #0ff;
+}
+
+#menu {
+    height: 50px;
+    background-color: #222;
+    font-family: 'Quicksand';
+}
+
+#menu ul {
+    padding-left: 50px;
+    list-style: none;
+    line-height: 50px;
+}
+
+#menu ul li {
+    float: left;
+}
+
+#menu ul li a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 30px;
+    transition: all 300ms;
+}
+
+#menu ul li a:hover {
+    background-color: #35aad9;
+    text-shadow: 2px 3px 1px rgb(0 0 0 / 25%);
+    box-shadow: 0 0 10px #333 inset;
+}
+
+#menu #form-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#menu #form-container form {
+    display: flex;
+    padding-right: 50px;
+}
+
+#menu #form-container form input {
+    border: none;
+}
+
+#menu #form-container form input[type='text'] {
+    font-family: 'Quicksand';
+    padding: 3px 0 3px 10px;
+    border-radius: 10px 0 0 10px;
+    transition: all 300ms;
+}
+
+#menu #form-container form input[type='text']:focus {
+    box-shadow: 0 0 5px #333 inset;
+}
+
+#menu #form-container form input[type='submit'] {
+    background-color: #fff;
+    padding-right: 2px;
+    border-radius: 0 10px 10px 0;
+    border-left: 1px solid #ccc;
+    transition: all 100ms;
+    cursor: pointer;
+}
+
+#menu #form-container form input[type='submit']:hover {
+    padding-bottom: 2px;
+}
+
+#slider {
+    display: flex;
+    justify-content: center;
+    padding: 11px 0;
+}
+
+#section {
+    display: flex;
+    justify-content: center;
+}
+
+#section #aside {
+    max-width: 275px;
+    margin: 20px;
+}
+
+#section #aside h3 {
+    background-color: #333;
+    color: #35aad9;
+    font-family: 'BebasNeue';
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 4px;
+    box-shadow: 1px 1px 0 #35aad9, 2px 2px 0 #35aad9, 3px 3px 0 #35aad9;
+    margin-bottom: 10px;
+}
+
+#section #aside form {
+    width: 77%;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 1px #333, 0px 4px 3px #333, 0px 0px 3px #333 inset;
+    padding: 20px 0;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#section #aside form input[type='text'],
+#section #aside form input[type='password'],
+#section #aside form input[type='submit'] {
+    height: 20px;
+    border: none;
+    font-family: 'Quicksand';
+}
+
+#section #aside form input[type='text'],
+#section #aside form input[type='password'] {
+    width: 170px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0 7px;
+    margin-bottom: 10px;
+    transition: all 300ms;
+}
+
+#section #aside form input[type='text']:focus,
+#section #aside form input[type='password']:focus {
+    box-shadow: 0 0 5px #333 inset;
+}
+
+#section #aside form input[type='submit'] {
+    width: 186px;
+    background-image: linear-gradient(to right, #333 0%, #35aad9 51%, #333  100%);
+    background-size: 200% auto;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+#section #aside form input[type='submit']:hover {
+    background-position: right center;
+}
+
+#section #aside p {
+    width: 77%;
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Quicksand';
+    box-shadow: 0 0 1px #333, 0px 4px 3px #333, 0px 0px 3px #333 inset;
+    margin: 0 auto;
+}
+
+#section #aside p span {
+    display: block;
+    padding: 10px;
+}
+
+#section #articles {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+#section #articles article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}    
+
+#section #articles article h2 {
+    width: 100%;
+    background-color: #333;
+    color: #35aad9;
+    font-family: 'BebasNeue';
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 4px;
+    box-shadow: 1px 1px 0 #35aad9, 2px 2px 0 #35aad9, 3px 3px 0 #35aad9;
+    margin-bottom: 10px;
+}
+
+#section #articles article p {
+    width: 400px;
+    background-color: #fff;
+    font-family: 'Quicksand';
+    box-shadow: 0 0 1px #333, 0px 4px 3px #333, 0px 0px 3px #333 inset;
+    padding: 10px 50px;
+    margin-bottom: 10px;
+}
+
+#section #articles article p span {
+    position: relative;
+    height: 0px;
+    color: #35aad9;
+    display: block;
+    text-align: end;
+    font-weight: bold;
+    bottom: 15px;
+    right: -30px;
+}
+
+#footer {
+    display: flex;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Quicksand';
+    text-align: center;
+    border-top: 3px solid #35aad9;
+    justify-content: center;
+    align-items: center;
+}
